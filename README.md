@@ -31,7 +31,7 @@ $ pip install -r requirements.txt
 A snapshot of the environment used for our experiments can be found in the file `env.txt`.
 
 ### Data
-Download the data from: `https://zenodo.org/record/6990501#.Yy66sS8w1pQ`
+Download the data from: `https://zenodo.org/record/7109766#.Yy7AGC8w1pQ`
 Unzip the folder and put it inside the `data` folder in this repository. The path should be `data/4/..`
 The folder `data/` in this library contains the datasets.
 The path to this folder needs to be set in the configuration files in the `configs` folder.
