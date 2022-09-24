@@ -1,0 +1,32 @@
+num_gpus: 1
+output_dir: "run"
+dataset_name: brain-net
+model: GNN
+gnn_type: "gin"
+graphlet_size: 5
+num_splits: 1
+#patience: 50000
+batch_size: 32
+lr: 0.001
+num_layers: 2
+mlp_num_hidden: 1
+mlp_hidden_dim: 64
+graph_embed_dim: 16
+#pre_mlp_hidden_dim: 16
+graph_pooling: sum
+num_epochs: 400
+data_dir: /Users/davidebuffelli/Desktop/data
+jk: false
+classifier_h_dim: 512
+classifier_num_hidden: 0
+num_out: 2
+classifier_dropout: 0.0
+batch_norm:
+  presence: true
+  affine: false
+###########
+cmd_coeff: 1.0
+fine_grained_cmd: False
+unc_weight: False
+normalize_emb: False
+gnn_batch_norm: True

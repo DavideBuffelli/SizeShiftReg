@@ -1,0 +1,26 @@
+num_gpus: 1
+output_dir: "run"
+dataset_name: IMDB-BINARY
+graphlet_size: 4
+only_common: false
+model: KaryGNN
+gnn_type: "gin"
+num_splits: 1
+batch_size: 128
+lr: 0.005
+num_layers: 3
+mlp_num_hidden: 1
+mlp_hidden_dim: 32
+graph_embed_dim: 32
+graph_pooling: sum
+num_epochs: 1000
+data_dir: /Users/davidebuffelli/Desktop/data
+jk: false
+classifier_h_dim: 128
+classifier_num_hidden: 1
+num_out: 2
+classifier_dropout: 0.3
+batch_norm:
+  presence: true
+  affine: false
+num_repeat_exp: 50

@@ -1,0 +1,39 @@
+num_gpus: 1
+output_dir: "run"
+dataset_name: brain-net
+#dataset_name: SYNTHETIC3
+model: GNN
+gnn_type: "gin"
+num_splits: 1
+batch_size: 128
+lr: 0.005
+num_layers: 2
+mlp_num_hidden: 1
+mlp_hidden_dim: 64
+graph_embed_dim: 64
+graph_pooling: sum
+graphlet_size: 5
+only_common: true
+num_epochs: 1
+data_dir: /Users/xzy/Desktop/data
+jk: false
+classifier_h_dim: 128
+classifier_num_hidden: 1
+num_out: 2
+classifier_dropout: 0.3
+batch_norm:
+  presence: true
+  affine: false
+num_repeat_exp: 1
+cmd_reg: true
+coarse_ratios: 
+  - 0.5
+  - 0.75
+coarsening_method: sgc
+fine_grained_cmd: True
+cmd_coeff: 1.0
+unc_weight: True
+gnn_batch_norm: False
+normalize_emb: True
+coarse_pool: deepset
+weighted_ce: False

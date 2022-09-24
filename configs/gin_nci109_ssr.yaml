@@ -1,0 +1,35 @@
+num_gpus: 1
+output_dir: "run"
+dataset_name: NCI109
+graphlet_size: 4
+model: GNN
+gnn_type: "gin"
+num_splits: 1
+batch_size: 128
+lr: 0.001
+num_layers: 3
+mlp_num_hidden: 1
+mlp_hidden_dim: 64
+graph_embed_dim: 64
+graph_pooling: sum
+num_epochs: 1000
+data_dir: /Users/davidebuffelli/Desktop/data
+jk: false
+classifier_h_dim: 128
+classifier_num_hidden: 1
+num_out: 2
+classifier_dropout: 0.3
+batch_norm:
+  presence: true
+  affine: false
+num_repeat_exp: 50
+cmd_reg: True
+coarse_ratios:
+  - 0.8
+  - 0.9
+fine_grained_cmd: True
+cmd_coeff: 0.1
+unc_weight: False
+normalize_emb: False
+coarse_pool: mean
+weighted_ce: True
