@@ -1,11 +1,14 @@
 # Code for the Paper "SizeShiftReg: a Regularization Method for Improving Size-Generalization in Graph Neural Networks"
 This repository contains code for the paper "SizeShiftReg: a Regularization Method for Improving Size-Generalization in Graph Neural Networks", by Davide Buffelli, Pietro Lio, and Fabio Vandin, accepted at NeurIPS 2022. If you use this repository please cite this paper.
 ```
-@article{buffelli2022sizeshiftreg,
+@inproceedings{
+  buffelli2022sizeshiftreg,
   title={SizeShiftReg: a Regularization Method for Improving Size-Generalization in Graph Neural Networks},
-  author={Buffelli, Davide and Lio, Pietro and Vandin, Fabio},
-  journal={Thirty-sixth Conference on Neural Information Processing Systems (NeurIPS)},
-  year={2022}
+  author={Davide Buffelli and Pietro Lio and Fabio Vandin},
+  booktitle={Advances in Neural Information Processing Systems},
+  editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+  year={2022},
+  url={https://openreview.net/forum?id=wOI0AUAq9BR}
 }
 ```
 
